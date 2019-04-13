@@ -24,7 +24,11 @@ render(){
     }else if(this.state.lat && !this.state.errorMessage){
         return <div><SeasonDisplay lat={this.state.lat}></SeasonDisplay></div>
     }else{
-        return <Spinner/>
+       const style={
+        margin:'10px',
+        minWidth:'100%'
+        }
+        return <div ><Spinner style={style}/></div>
 
     }  
   

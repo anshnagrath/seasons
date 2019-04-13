@@ -3,11 +3,13 @@ class Spinner extends Component{
   render(){
       return(
           
-   <div class="ui segment">
-    <div class="ui active dimmer">
-    <div class="ui loader"></div>
+
+  <div className="ui active dimmer">
+    <div class="ui big text loader">Please allow us to fetch your location</div>
   </div>
-</div>
+  // <p></p>
+// </div>
       )
   }  
 }
+export default Spinner
